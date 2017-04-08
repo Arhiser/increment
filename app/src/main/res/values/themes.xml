@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- the theme applied to the application or activity -->
+    <style name="AppActionBarTheme"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:actionMenuTextColor">@color/action_text_color</item>
+
+    </style>
+
+    <style name="SecondaryActivityTheme" parent="AppActionBarTheme">
+        <item name="actionBarStyle">@style/ActionBarStyleSecondary</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextAppearance">@style/ToolbarTitleText</item>
+        <item name="subtitleTextAppearance">@style/ToolbarSubtitleText</item>
+        <item name="actionMenuTextAppearance">@style/ToolbarActionText</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="AppActionBarTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="ToolbarTitleText">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:actionMenuTextColor">@color/action_bar_menu_text_color</item>
+        <!--<item name="android:textSize">10sp</item>-->
+    </style>
+
+    <style name="ToolbarSubtitleText">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <!--<item name="android:textSize">10sp</item>-->
+    </style>
+
+    <style name="ToolbarActionText">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="ActionBarStyleSecondary" parent="Base.ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextAppearance">@style/ToolbarTitleTextSecondary</item>
+        <item name="subtitleTextAppearance">@style/ToolbarSubtitleTextSecondary</item>
+        <item name="actionMenuTextAppearance">@style/ToolbarActionText</item>
+    </style>
+
+    <style name="ToolbarTitleTextSecondary">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ToolbarSubtitleTextSecondary">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
