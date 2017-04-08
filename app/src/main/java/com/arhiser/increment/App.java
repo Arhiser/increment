@@ -14,9 +14,6 @@ import java.util.Locale;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
-/**
- * Created by Pavel Skorynin on 16/02/15.
- */
 public class App extends Application {
 
     @Override
